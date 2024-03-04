@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("assets/bg4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper .loader {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 25px;
+}
+
+.loader .loading {
+    --color-A: rgb(163, 165, 203);
+    --color-B: rgb(127, 130, 179);
+    --color-C: rgb(91, 94, 151);
+    --color-D: rgb(54, 57, 118);
+    --color-E: rgb(15, 19, 81);
+    --color-F: rgb(2, 3, 29);
+    background: var(--color-A);
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin: 0 15px;
+    animation: load 0.9s ease infinite;
+}
+
+.loader .loading.A {
+    animation-delay: 0.2s;
+    background: var(--color-A);
+  }
+.loader .loading.B {
+    animation-delay: 0.3s;
+    background: var(--color-B);
+  }
+.loader .loading.C {
+    animation-delay: 0.4s;
+    background: var(--color-C);
+  }
+.loader .loading.D {
+    animation-delay: 0.5s;
+    background: var(--color-D);
+  }
+.loader .loading.E {
+    animation-delay: 0.6s;
+    background: var(--color-E);
+  }
+.loader .loading.F {
+    animation-delay: 0.7s;
+    background: var(--color-F);
+  }
+
+@keyframes load {
+    0% {
+        width: 40px;
+        height: 40px;
+    }
+    50%{
+        width: 25px;
+        height: 25px;
+    }
+}
